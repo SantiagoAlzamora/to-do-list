@@ -7,6 +7,11 @@
   background-image: url(https://us.123rf.com/450wm/gurza/gurza1902/gurza190200019/124846791-tienda-de-productos-org%C3%A1nicos-supermercado-ilustraci%C3%B3n-vectorial.jpg?ver=6);
 }
 
+.list{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .content{
   display: flex;
   flex-direction: column;
