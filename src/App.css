@@ -13,7 +13,6 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9);
-  width: 40%;
 }
 
 li{
@@ -68,6 +67,7 @@ form{
   border-radius: 30px;
   background-color: wheat;
   height: 300px;
+  width: 80%;
   overflow:auto;
   padding-left:0 ;
 }
