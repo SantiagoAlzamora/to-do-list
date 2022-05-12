@@ -11,6 +11,7 @@ const List = () => {
 
   const addProduct = (e) =>{
     e.preventDefault();
+    let roundedPrice = Math.round(price*100)/100
     if(name === "" || quantity === "") return
     setProducts([
       ...products,
@@ -18,11 +19,11 @@ const List = () => {
         id: +new Date(),
         name:name,
         quantity:quantity,
-        price:price,
+        price:roundedPrice,
         completed:false
       }
     ])
-    setTotal(total + price*quantity)
+    setTotal(total + ((Math.round(roundedPrice*quantity*100))/100))
     setName("");
     setQuantity("");
     setPrice("")
@@ -33,7 +34,7 @@ const List = () => {
       if(p.id !== id){
         return p
       }
-      setTotal(total-(p.price*p.quantity))
+      setTotal(total-(Math.round(p.price*p.quantity*100)/100))
     }))
   }
 

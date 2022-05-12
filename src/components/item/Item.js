@@ -3,7 +3,7 @@ import React from 'react'
 export const Item = ({product,completeProduct,deleteProduct}) => {
 
  
-  let subTotal = product.price*product.quantity
+  let subTotal = Math.round(product.price*product.quantity*100)/100
   
 
   return (
